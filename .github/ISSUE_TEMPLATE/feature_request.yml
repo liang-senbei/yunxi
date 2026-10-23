@@ -1,0 +1,21 @@
+name: 想要的功能
+description: 想让 Yunxi 多做点什么
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: 你想做成什么事
+      description: 说说场景：在做什么、卡在哪
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 希望它怎么做
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 主要在哪用
+      multiple: true
+      options: [Windows, macOS, Android]

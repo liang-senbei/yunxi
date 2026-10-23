@@ -1,0 +1,49 @@
+name: 问题反馈
+description: 哪里不对、哪里坏了
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "**别贴**密钥、令牌、服务器地址、私钥或对话里的私人内容；截图前遮一下。安全问题请在 App 里「我的 → 工单」私下说。"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options: [Windows, macOS, Android]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Yunxi 版本
+      placeholder: 例如 1.4.27（桌面版在「设置 → 关于」能看到）
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: 用的运行器
+      multiple: true
+      options: [Claude Code, Codex, OpenCode, Hermes, Gemini, Grok Build, 不涉及]
+  - type: dropdown
+    id: where
+    attributes:
+      label: 跑在哪
+      options: [这台电脑, 远程服务器（SSH）, 不涉及]
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么
+      description: 你看到了什么，本来应该是什么样
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么能再遇到
+      placeholder: "1. 打开…\n2. 点…\n3. 看到…"
+  - type: textarea
+    id: shots
+    attributes:
+      label: 截图或录屏
+      description: 拖进来就行（记得遮掉私人信息）

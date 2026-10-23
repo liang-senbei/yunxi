@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 下载和官网
+    url: https://yxi.keuury.com
+    about: 安装包、系统要求和常见问题。
+  - name: 隐私政策
+    url: https://yxi.keuury.com/privacy
+    about: 安全问题请别公开发，在 App 里「我的 → 工单」私下告诉我们。

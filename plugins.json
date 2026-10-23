@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "everyinfra",
+      "name": "EveryInfra 万有引擎",
+      "partner": true,
+      "builtin": true,
+      "since": "next",
+      "category": "数据与分析",
+      "description": "一个 MCP 接进 90 个平台的 414 个数据接口、AI 搜索和验证码识别；失败或空结果不收钱。",
+      "homepage": "https://cn.everyinfra.com/",
+      "docs": "https://cn.everyinfra.com/docs",
+      "repository": "https://github.com/everyinfra/everyinfra-agent-plugins",
+      "install": {
+        "claude-code": [
+          "claude plugin marketplace add everyinfra/everyinfra-agent-plugins",
+          "claude plugin install everyinfra@everyinfra"
+        ]
+      }
+    },
+    {
+      "id": "android-emulator",
+      "name": "Android 模拟器",
+      "builtin": true,
+      "platforms": ["windows"],
+      "category": "开发工具",
+      "description": "管理 Android 虚拟设备：启动、停止，看运行日志。"
+    }
+  ]
+}

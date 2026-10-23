@@ -1,0 +1,33 @@
+name: 插件推荐
+description: 推荐一个插件或 MCP 进插件列表
+labels: [plugin]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 名字
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: 主页或仓库
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 它做什么
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: 怎么装
+      description: Claude Code / Codex 的安装命令，或 MCP 配置
+  - type: dropdown
+    id: cost
+    attributes:
+      label: 要不要账号或付费
+      options: [都不要, 要账号, 要付费, 有免费额度]
